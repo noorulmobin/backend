@@ -20,3 +20,6 @@ if (stack){
 
     }
 } 
+
+
+export {ApiError}

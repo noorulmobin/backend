@@ -1,5 +1,5 @@
 import mongoose,{Schema} from "mongoose";
-import { Jwt } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
 const userSchema = new Schema({
@@ -24,7 +24,7 @@ const userSchema = new Schema({
         trim: true,
         index: true
     },
-    avatr :{
+    avatar :{
         type: "string",
         required: true,
     },
